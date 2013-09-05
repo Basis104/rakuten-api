@@ -44,3 +44,7 @@ end
 
 gem 'httpclient'
 gem 'rails_12factor'
+
+group :test do
+  gem 'rake'
+end
