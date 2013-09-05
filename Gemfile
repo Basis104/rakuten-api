@@ -42,9 +42,11 @@ end
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
-gem 'httpclient'
+# USE RAKUTEN PROJECT
+gem 'httpclient' 
 gem 'rails_12factor'
 
 group :test do
   gem 'rake'
+  gem 'rspec-rails'
 end
