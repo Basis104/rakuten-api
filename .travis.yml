@@ -1,3 +1,10 @@
 language: ruby
 rvm:
-  - 2.0.0
+- 2.0.0
+deploy:
+  provider: heroku
+  api_key:
+    secure: n6kf6v7uWcgwDSLWmz3R7zK/CdMFajb+KGUQCS2nvcDoHu1MxPKe4JLDhAYHmvjbPis+Qalj4tfxgCNH2Z1tFXkL8vmP66B3HPDIhTqFEQJseqVUH71WCcLRebpjWVsV3VuGTTWTWWZ335fmPBjqd+YpbmS72FAoocvZxMZc/q8=
+  app: stark-cliffs-7027
+  on:
+    repo: Basis104/rakuten-ws-rails-sample
