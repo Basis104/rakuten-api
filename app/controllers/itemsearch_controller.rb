@@ -12,7 +12,7 @@ class ItemsearchController < ApplicationController
 
     begin
       data = httpClient.get_content('http://api.rakuten.co.jp/rws/3.0/json',{
-                                      'developerId' => '1005207065584656150',
+                                      'developerId' => '1046125781907581411',
                                       'affiliateId'   => '11b23db1.acb56b0a.11b23db2.0c5a2bef',
                                       'operation' => 'GetAreaClass',
                                       'version' => '2009-03-26',
