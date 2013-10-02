@@ -3,19 +3,20 @@ class ItemsearchController < ApplicationController
     render 'itemsearch/index'
   end
 
-  def search
-    keyword = params['keyword']
+  def result
+#    keyword = params['keyword']
     httpClient = HTTPClient.new
 
     @jsonData = nil
     @errorMeg = nil
 
     begin
-      data = httpClient.get_content('https://app.rakuten.co.jp/services/api/IchibaItem/Search/20130805', {
-          'applicationId' => '1005207065584656150',
-          'affiliateId'   => '11b23db1.acb56b0a.11b23db2.0c5a2bef',
-          'keyword'       => keyword
-      })
+      data = httpClient.get_content('http://api.rakuten.co.jp/rws/3.0/json',{
+                                      'developerId' => '1005207065584656150',
+                                      'affiliateId'   => '11b23db1.acb56b0a.11b23db2.0c5a2bef',
+                                      'operation' => 'GetAreaClass',
+                                      'version' => '2009-03-26',
+                                     })
       @jsonData = JSON.parse data
       p @jsonData
     rescue HTTPClient::BadResponseError => e
