@@ -8,7 +8,7 @@ class ItemsearchController < ApplicationController
     @jsonData = nil
     @errorMeg = nil
     begin
-      data = httpClient.get_content('http://api.rakuten.co.jp/rws/2.0/json',{
+      data = httpClient.get_content('http://api.rakuten.co.jp/rws/3.0/json',{
                                       'developerId' => '1046125781907581411',
                                       'affiliateId' => '11b23db1.acb56b0a.11b23db2.0c5a2bef',
                                       'operation' => 'GetAreaClass',
