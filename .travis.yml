@@ -4,7 +4,7 @@ rvm:
 deploy:
   provider: heroku
   api_key:
-    secure: n6kf6v7uWcgwDSLWmz3R7zK/CdMFajb+KGUQCS2nvcDoHu1MxPKe4JLDhAYHmvjbPis+Qalj4tfxgCNH2Z1tFXkL8vmP66B3HPDIhTqFEQJseqVUH71WCcLRebpjWVsV3VuGTTWTWWZ335fmPBjqd+YpbmS72FAoocvZxMZc/q8=
-  app: stark-cliffs-7027
+    secure: BZmk6dL/EpKfK9/+aRYuq2LTGi3nrHfQFmLRich12UD8Iif7u/aRUxCw1tlZOLcNJ92J3lzjfAvWfW0NBIc4j9l6PZvAlldfktVk2MewKHwnPlqtPaiOfC7nQH2kTJF5YvFNP5DMK3eXXARYbFnha1/3jgX1pL+WdMWWhzMeMSI=
+  app: sleepy-retreat-4094
   on:
-    repo: Basis104/rakuten-ws-rails-sample
+    repo: Basis104/rakuten-api

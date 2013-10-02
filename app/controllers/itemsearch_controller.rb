@@ -4,12 +4,9 @@ class ItemsearchController < ApplicationController
   end
 
   def result
-#    keyword = params['keyword']
     httpClient = HTTPClient.new
-
     @jsonData = nil
     @errorMeg = nil
-
     begin
       data = httpClient.get_content('http://api.rakuten.co.jp/rws/3.0/json',{
                                       'developerId' => '1046125781907581411',
@@ -22,7 +19,6 @@ class ItemsearchController < ApplicationController
     rescue HTTPClient::BadResponseError => e
     rescue HTTPClient::TimeoutError => e
     end
-
     render 'itemsearch/index'
   end
 end
