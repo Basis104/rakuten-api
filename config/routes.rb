@@ -1,5 +1,6 @@
 RakutenSample::Application.routes.draw do
-  root 'itemsearch#result'
+  root 'itemsearch#result#'
   get '/result' => 'itemsearch#result'
-  get '/bookmark' => 'bookmark#index'
+  post '/search' => 'bookmark#search'
+  get  '/index' => 'bookmark#index'
 end
